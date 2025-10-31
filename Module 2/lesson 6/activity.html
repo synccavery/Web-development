@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Positioning</title>
+        <style>
+            #fixed{
+                position: fixed;
+                top: 0px;
+                right: 50px;
+                border: 2px solid yellow;
+            }
+            #relative{
+                position: relative;
+                border: 2px solid green;
+                width: 200px;
+                left: 100px;
+            }
+            #absolute{
+                position: absolute;
+                border: 2px solid orange;
+                left: 100px;
+            }
+            #sticky{
+                position: sticky;
+                top: 0px;
+                width: 200px;
+                border: 2px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Positining</h1>
+        <div id="fixed">
+            Div with fixed positioning.
+        </div>
+        <div id="relative">
+            Div with relative position.
+            <div id="absolute">
+                Div with absolute position.
+            </div>
+        </div>
+        <div id="sticky">
+            Div with sticky position.
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>
