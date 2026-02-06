@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <h1><i>Accessing Values with HTML DOM Structure</i></h1>
+    <p id="Chocolates"></p>
+    <p id="join"></p>
+    <p id="pop"></p>
+    <script>
+        var Fruits = ["Geisha", "Silk oreo", "Crispilo", "Galaxy", "Perk", "Hersheys"];
+        document.getElementById("Chocolates").innerHTML = Fruits;
+        document.write("<br>" + Fruits[3]);
+        document.getElementById("join").innerHTML = Fruits.join("-");
+        Fruits.pop();
+        document.getElementById("pop").innerHTML = Fruits;
+    </script>
+</body>
+</html>
