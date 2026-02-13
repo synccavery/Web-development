@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>JavaScript Array</h1>
+        <p id="arrayDisplay"></p>
+        <p>Click the button to sort the array in ascending order:</p>
+        <button onclick="ascending()">Ascending Order</button>
+        <p>Click the button to sort the array in descending order:</p>
+        <button onclick="descending()">Descending Order</button>
+        <p id="result"></p>
+
+        <script>
+            var num = [40,33,21,100,175,99,88,77,66,55]
+            document.getElementById("arrayDisplay").innerHTML= "Original Array: "+num;
+            function ascending() {
+                num.sort(function(a,b) {return a-b});
+                document.getElementById("result").innerHTML = num;
+            }
+            function descending() {
+               num.sort(function (a, b) { return b-a });
+                document.getElementById("result").innerHTML = num; 
+            }
+        </script>
+    </body>
+</html>
