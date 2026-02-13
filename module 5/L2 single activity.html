@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <h2>JS Class Inheritence and Super Keyword</h2>
+    <p id="details"></p>
+    <script>
+        class Animal {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+            details() {
+                return 'Name: ' + this.name + ', Age: ' + this.age;
+            }
+        }
+        class Child extends Animal {
+            constructor(name, age, grade) {
+                super(name, age);
+                this.grade = grade;
+            }
+        }
+        const child1 = new Child('Milky', 3,);
+        document.getElementById("details").innerHTML = child1.details() + ', Grade: ' + child1.grade
+    </script>
+</body>
