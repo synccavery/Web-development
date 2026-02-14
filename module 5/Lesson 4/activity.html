@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>JavaScript in Details</h1>
+        <h3>Type Conversion</h3>
+        <script>
+            var x = 70;
+            var y = 30;
+            document.write("The type of x is: "+typeof(x)+"<br>");
+            var result = x+y;
+            document.write("The result of x+y is: " +result+ "<br>");
+            document.write("The result of x+y after converting to string is: " +String(x)+String(y) +"<br>");
+
+            document.write("<h3>Error Handling</h3>");
+            try{
+                addalert("Welcome to JavaScript");
+            } catch (error){
+                document.write(error.message+"<br>");
+            }
+        </script>
+    </body>
+</html>
