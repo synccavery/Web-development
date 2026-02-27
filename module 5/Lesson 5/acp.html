@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Asynchronous Functions in JavaScript</h1>
+        <p id="result"></p>
+        <script>
+            async function multiply(a, b) {
+                let result = await a*b;
+                display(result);
+            }
+            function display(output) {
+                document.getElementById("result").innerHTML = output;
+            }
+            multiply(5, 10);
+            product
+        </script>
+    </body>
+</html>
