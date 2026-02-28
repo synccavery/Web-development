@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h3>JavaScript Palindrome Checking Function</h3>
+        <script>
+            function palindrome(string) {
+                var input = string.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+                var reversed = input.split('').reverse().join('')
+
+                if (input == reversed) {
+                    document.write(string+ " is a palindrome.");
+                }
+                else  {
+                    document.write(" Not a palindrome.");
+            }
+        }
+        palindrome('Madam')
+        </script>
+    </body>
+</html>
