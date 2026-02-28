@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+      <p>Enter Your Age:</p>  
+      <input type="number" id="id" min="18" required>
+      <button onclick="myFunction()">OK</button>
+      <P>Note: If the age is less than 18, it will display an error message</P>
+      <p id="result"></p>
+      <script>
+        function myFunction() {
+            var input = document.
+            getElementById("id")
+            if(!input.checkValidity()) {
+                document.getElementById("result").innerHTML ="Error: Peopla under 18 are not allowed"
+            } else{
+                document.getElementById("result").innerHTML = "Input is valid"
+            }
+        }
+      </script>
+    </body>
+</html>
