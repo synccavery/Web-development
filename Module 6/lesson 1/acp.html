@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <script>
+        var choice = prompt("Welcome to Perimeter Calculater.\nPlease enter your choice.\n1. Perimeter of Rectangle \n 2. Perimeter of Triangle \n 3. Perimeter of Circle.")
+        if (choice == '1') {
+            var l = prompt("Enter the length")
+            var w = prompt("Enter the width")
+            var perimeter = 2*(l+w)
+            alert("The perimeter is " + perimeter)
+        }
+        if (choice == '2') {
+            var s = prompt("Enter the side(1)")
+             var ss = prompt("Enter the side(2)")
+            var b = prompt("Enter the base")
+            var Perimeter = s+ss+b
+            alert("The perimeter is " + Perimeter)
+        }
+        if (choice == '3') {
+            var r = prompt("Enter the radius")
+            var Perimeter = 2*3.14*r
+            alert("The perimeter is " + Perimeter)
+        }
+    </script>
+</body>
+
+</html>
