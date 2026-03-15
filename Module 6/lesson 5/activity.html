@@ -11,9 +11,10 @@
         </div>
 
         <script>
-            var second = 0;
+            var seconds = 0;
             var milliseconds = 0;
             var appendMilliseconds;
+            var appendSeconds
             var buttonStart;
             var buttonStop;
             var buttonReset;
@@ -21,7 +22,7 @@
 
             window.onload = function() {
                 appendMilliseconds = document.getElementById("milliseconds");
-                appendseconds = document.getElementById("seconds");
+                appendSeconds = document.getElementById("seconds");
                 buttonStart = document.getElementById("button-start");
                 buttonStop = document.getElementById("button-stop");
                 buttonReset = document.getElementById("button-reset");
@@ -38,7 +39,7 @@
                     milliseconds = 0;
                     seconds = 0;
                     appendMilliseconds.innerHTML = "00"
-                    appendSeconds.innerHtml = "00";
+                    appendSeconds.innerHTML = "00";
                 }
             }
 
@@ -51,7 +52,7 @@
                     appendMilliseconds.innerHTML = milliseconds;
                 }
                 if (milliseconds > 99) {
-                    second++;
+                    seconds++;
                     appendSeconds.innerHTML = (seconds < 10 ? "0" : "") + seconds;
                     milliseconds = 0;
                     appendMilliseconds.innerHTML = "00"

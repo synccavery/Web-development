@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            #dice {
+                font-size: 320px;
+            }
+            #dice:hover {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Click on the dice...
+        </div>
+        <div id="dice" onclick="stopstart()"></div>
+        <script>
+            var dices = ['&#9856;', '&#9857;', '&#9858;', '&#9859;', '&#9860;', '&#9861;'];
+            var stopped = true;
+            function change() {
+                var random = Math.floor(Math.random()*6);
+                dice.innerHTML = dices[random];
+            }
+            function stopstart() {
+                if (stopped) {
+                    stopped = false;
+                    time = setInterval(change,100);
+                }
+                else {
+                    stopped = true;
+                    clearInterval(time);
+                }
+            }
+
+            window.onload = function() {
+                dice = document.getElementById("dice");
+                stopstart();
+            }
+        </script>
+    </body>
+</html>
